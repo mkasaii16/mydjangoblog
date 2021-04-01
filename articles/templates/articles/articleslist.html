@@ -9,6 +9,7 @@ article
       <h2>
         <a href="{% url 'articles:detail' slug=article.slug %}">{{article.title}}</a>
         <p>{{article.snippet}}</p>
+        <img src="{{ article.image.url }}" alt="">
         <p>{{article.date}}</p>
       </h2>
       {% endfor %}
