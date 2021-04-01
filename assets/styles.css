@@ -1,5 +1,5 @@
 body {
-  background-color: #0f1f11;
+  background-color: blue;
   background-image: url(star.jpg);
   background-repeat-y: no-repeat;
   background-attachment: fixed;
@@ -14,6 +14,104 @@ h1,h2,h3,h4,h5{
   margin: 0;
 }
 a,a:hover,a:visited{
-  color: #0bbb;
-  text-decoration: none;
+  color: #fff;
+  /* text-decoration: none; */
+}
+.wrapper{
+  max-width: 960px;
+  margin: 0 auto;
+}
+div.wrapper h1 {
+  text-align: center;
+  margin:10px auto;
+  font-size: 1.4m;
+}
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 0;
+}
+nav li{
+  display: inline-block;
+  margin-left: 10px;
+}
+nav button{
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  font-size: 1em;
+}
+.articles{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+.article{
+  padding: 10px;
+  border: 1px solid #fff;
+  position: relative;
+  padding-bottom: 40px;
+}
+.article h2{
+  font-size: 1.2em;
+}
+.article .author{
+  padding: 10px;
+  background-color: #00dba0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+.article-detail .article{
+  padding: 0;
+}
+.article-detail .article img{
+  max-width: 100%;
+}
+.article-detail .article h2{
+  text-align: center;
+  font-size: 2em;
+}
+.article-detail .article p{
+  text-align: center;
+  font-size: 1em;
+}
+.site_form{
+  margin-top: 60px;
+  border: 1px solid black;
+  padding: 20px;
+}
+.site_form input,.site_form textarea{
+  display: block;
+  margin: 20px 0 0 ;
+  padding: 10px;
+}
+a.highlight{
+  border: 1px solid green;
+  padding: 10px;
+  border-radius: 4px;
+  color: green;
+  background-color: white;
+}
+.helptext,.helptext ul{
+  margin: 0 auto 20px;
+  font-size: 0.9em;
+  display:block;
+}
+.errorlist li{
+  color: red;
+  border: 1px solid red;
+}
+.errorlist{
+  padding: 0;
+}
+
+.site-form input[type="submit"]{
+  border: 10;
+  color: black;
+  background-color: green;
+  border-radius: 4px;
+  margin: 10px 0;
 }

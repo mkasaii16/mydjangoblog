@@ -5,14 +5,16 @@ from . import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf import settings
 from django.conf.urls.static import static
+from articles.views import articles_list
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('about/',views.about),
-    path('',views.home),
     path('articles/',include('articles.urls')),
     path('account/',include('account.urls')),
+    path('',articles_list),
+
 ]
 
 
